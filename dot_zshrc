@@ -2,8 +2,8 @@
 # name: Graham Zuber
 # github: github.com/gzuber
 # email: grahamzuber@gmail.com
-#
-#
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/gzuber/.oh-my-zsh
 
@@ -59,8 +59,7 @@ plugins=(git brew)
 
 # User configuration
 
-export PATH="$HOME/.gems/:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin:/usr/local/go/bin:$HOME/Repositories/go/bin"
-export GOPATH="$HOME/Repositories/go/cs6963/labs"
+export PATH="/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -80,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
