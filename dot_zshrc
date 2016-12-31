@@ -58,8 +58,16 @@ ZSH_THEME="gzuber"
 plugins=(git brew)
 
 # User configuration
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-export PATH="/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+# mysql
+export PATH="$PATH:/usr/local/mysql/bin"
+
+# rust
+export PATH="$PATH:/Users/gzuber/.cargo/bin"
+
+# mono config
+export MONO_GAC_PREFIX="usr/local"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
