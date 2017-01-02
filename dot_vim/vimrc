@@ -139,13 +139,13 @@ autocmd bufnewfile *.c,*.cpp,*.h,*.cc
             \ "/" . "\n\n"
 
 " auto update last modified line
-autocmd bufwritepre *.c,*.cpp,*.h,*.cc
+autocmd bufwritepre *
             \ silent!
             \ exe "normal mj"
-autocmd bufwritepre *.c,*.cpp,*.h,*.cc
+autocmd bufwritepre *
             \ silent!
             \ exe "1,10s/last modified:.*/last modified: " . strftime("%c") . "/g"
-autocmd bufwritepre *.c,*.cpp,*.h,*.cc
+autocmd bufwritepre *
             \ silent!
             \ exe "normal `j"
 

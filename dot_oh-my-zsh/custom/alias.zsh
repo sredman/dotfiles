@@ -13,6 +13,7 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl .'
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias repos='cd ~/OneDrive/repos'
 alias drive='cd ~/OneDrive'
+alias docs='cd ~/OneDrive/documents'
 
 # git shortcuts
 alias mergemaster='if [ -n "$1" ]; then BRANCH="$1"; else BRANCH="dev"; fi; git checkout $BRANCH && git push && git checkout master && git merge $BRANCH && git push && git checkout $BRANCH'
