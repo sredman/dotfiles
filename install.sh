@@ -1,10 +1,13 @@
 #!/bin/zsh
 
 # filename: install.sh
+#
 # created by: Graham Zuber
 # github: github.com/gzuber
+# email: grahamzuber@gmail.com
+#
 # created: 02.01.2017
-# last modified: Mon Jan  2 14:58:19 2017
+# last modified: Mon Jan  2 15:51:29 2017
 # 
 # description:
 #
@@ -12,6 +15,7 @@
 # to correctly set symlinks for
 # dotfiles throughout the user's
 # home directory. 
+
 
 # filepath to dotfiles repo (make
 # sure to use $HOME and not ~/)
@@ -25,8 +29,8 @@ X_MARK="\xE2\x9C\x98"
 # these should be the same length
 # each entry corresponds with entry
 # in other array at same index.
-NEW_LINKS=("/.gitignore_global" "/.zshrc" "/.vim/vimrc" "/.oh-my-zsh/custom/alias.zsh" "/.oh-my-zsh/custom/completion.zsh" "/.oh-my-zsh/custom/correction.zsh" "/.oh-my-zsh/custom/misc.zsh" "/.oh-my-zsh/custom/schemes/schemes/gzuber.itermcolors" "/.oh-my-zsh/custom/themes/gzuber.zsh-theme")
-DOT_FILES=("/dot_gitignore_global" "/dot_zshrc" "/dot_vim/vimrc" "/dot_oh-my-zsh/custom/alias.zsh" "/dot_oh-my-zsh/custom/completion.zsh" "/dot_oh-my-zsh/custom/correction.zsh" "/dot_oh-my-zsh/custom/misc.zsh" "/dot_oh-my-zsh/custom/schemes/schemes/gzuber.itermcolors" "/dot_oh-my-zsh/custom/themes/gzuber.zsh-theme")
+NEW_LINKS=("/.gitignore_global" "/.zshrc" "/.vim/vimrc" "/.oh-my-zsh/custom/aliases.zsh" "/.oh-my-zsh/custom/functions.zsh" "/.oh-my-zsh/custom/completion.zsh" "/.oh-my-zsh/custom/correction.zsh" "/.oh-my-zsh/custom/misc.zsh" "/.oh-my-zsh/custom/schemes/schemes/gzuber.itermcolors" "/.oh-my-zsh/custom/themes/gzuber.zsh-theme")
+DOT_FILES=("/dot_gitignore_global" "/dot_zshrc" "/dot_vim/vimrc" "/dot_oh-my-zsh/custom/aliases.zsh" "/dot_oh-my-zsh/custom/functions.zsh" "/dot_oh-my-zsh/custom/completion.zsh" "/dot_oh-my-zsh/custom/correction.zsh" "/dot_oh-my-zsh/custom/misc.zsh" "/dot_oh-my-zsh/custom/schemes/schemes/gzuber.itermcolors" "/dot_oh-my-zsh/custom/themes/gzuber.zsh-theme")
 
 # make sure folders are all there
 printf "creating paths   "

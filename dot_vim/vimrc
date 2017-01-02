@@ -1,3 +1,17 @@
+" filename: vimrc
+"
+" created by: Graham Zuber
+" github: github.com/gzuber
+" email: grahamzuber@gmail.com
+"
+" created: 02.01.2017
+" last modified: Mon Jan  2 15:54:41 2017
+" 
+" description:
+"
+" vim customizations
+
+
 call plug#begin('~/.vim/plugged')
 
 " basics
@@ -130,8 +144,11 @@ autocmd bufnewfile *.c,*.cpp,*.h,*.cc
             \ exe "normal i" . 
             \ "/*" . "\n" .
             \ "filename: " . expand("%") . "\n" .
+            \ "\n" .
             \ "created by: Graham Zuber" . "\n" .
             \ "github: github.com/gzuber" . "\n" .
+            \ "email: grahamzuber@gmail.com" . "\n" .
+            \ "\n" .
             \ "created: " . strftime("%d.%m.%Y") . "\n" .
             \ "last modified: " . strftime("%c") . "\n" .
             \ "\n" .
@@ -144,7 +161,7 @@ autocmd bufwritepre *
             \ exe "normal mj"
 autocmd bufwritepre *
             \ silent!
-            \ exe "1,10s/last modified:.*/last modified: " . strftime("%c") . "/g"
+            \ exe "1,15s/last modified:.*/last modified: " . strftime("%c") . "/g"
 autocmd bufwritepre *
             \ silent!
             \ exe "normal `j"
