@@ -66,6 +66,10 @@ export PATH="$PATH:/usr/local/mysql/bin"
 # rust
 export PATH="$PATH:/Users/gzuber/.cargo/bin"
 
+# go config
+export GOROOT="/usr/local/opt/go/libexec"
+export PATH="$PATH:$GOROOT/bin"
+
 # mono config
 export MONO_GAC_PREFIX="usr/local"
 
