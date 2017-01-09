@@ -62,6 +62,8 @@ M-a=
 // in 3 way conflict, left is 2 (target, usually master), right is 3 (merging branch, and 1 is middle (soon-to-be resolved file)
 :diffget // (add a number to specify where from) get the chunk where cursor is located into current window
 :diffput // (add a number to specify where to) put the chunk where cursor is to other window
+[c // jump to previous chunk
+]c // jump to next chunk
 // diff mode ends when I exit all windows I don’t want to keep open
 
 :Gblame
