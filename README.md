@@ -19,6 +19,7 @@ directory variable in the shell script and run it.
 ## Vim Shortcuts
 
 // get rid of all splits except current one
+
 :only
 
 ### fuzzy finding files
