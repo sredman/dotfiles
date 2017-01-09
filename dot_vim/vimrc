@@ -5,7 +5,7 @@
 " email: grahamzuber@gmail.com
 "
 " created: 02.01.2017
-" last modified: Sun Jan  8 18:50:17 2017
+" last modified: Sun Jan  8 19:14:32 2017
 " 
 " description:
 "
@@ -53,6 +53,10 @@ call plug#end()
 " general settings
 set nocp      
 filetype plugin on      
+
+" ctags and auto ctags
+set tags+=.tags
+let g:autotagTagsFile=".tags"
 
 " colorscheme and font
 colorscheme quantum
