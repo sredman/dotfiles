@@ -5,7 +5,7 @@
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/gzuber/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -64,7 +64,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:/usr/local/mysql/bin"
 
 # rust
-export PATH="$PATH:/Users/gzuber/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # go config
 export GOROOT="/usr/local/opt/go/libexec"
