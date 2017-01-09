@@ -24,28 +24,36 @@ directory variable in the shell script and run it.
 ```
 
 ### fuzzy finding files
+```
 C-p // start fuzzy finding
 C-j // navigate down results list
 C-k // navigate up results list
+```
 
 ### navigate buffer
+```
 M-f // forward a buffer
 M-b // back a buffer
 
 // enables nerd tree
 M-t
+```
 
 ### easily align paragraphs
+```
 // aligns on ‘=‘
 M-a= 
+
 // M-a starts alignment, selecting the current paragraph
 // = specifies around what to align
 // putting ‘*’ before ‘=‘ aligns to every occurrence
 // putting a number before ‘=‘ aligns to that occurrence (1st, 2nd, etc…)
 // pressing the enter key before ‘*=‘ or whatever flips between left/right/center alignment
 // instead of entering a ‘=‘ or ‘ ‘, you can press C-x and enter a regex around which to align
+```
 
 ### git commands
+```
 :Gedit // look at last committed version of file?
 :Gvsplit
 :Gsplit
@@ -59,38 +67,51 @@ M-a=
 :Gblame
 :Gstatus
 :Gcommit
+```
 
 ### snippets
 write something like ‘for’ and then hit tab
 you can then tab through, changing values
 
 ### ctags
+```
 C-] // takes you to definition of item under cursor
 C-t // takes you back
+```
 
 ### YouCompleteMe
+```
 // generates .ycm-extra_conf.py for specifying compiler flags with ycm
 :YcmGenerateConfig
 // shows you suggestions as you type, hit tab to cycle through
+```
 
 #### error navigating
+```
 M-l // open errors (list) window
 M-h // close error window
 M-j // cycle to next error
 M-k // cycle to prev error
+```
 #### goto’s
+```
 M-y // get type
 M-n // goto iNclude
 M-d // goto Definition
 M-r // goto declaRation
+```
 
 ### clang complete
+```
 C-space // open list of possible completions for what you’re typing
 // add .clang-complete to project root to supply compiler flags for additional libraries (i.e. -I../inc or -ltbb)
+```
 
 ### a.vim
+```
 :A  // switched between header and source file
 :AS // with split
 :AV // with vsplit
 :IH // goto file under cursor, S and V options exist for this as well
+```
 
