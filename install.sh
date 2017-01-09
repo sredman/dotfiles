@@ -7,7 +7,7 @@
 # email: grahamzuber@gmail.com
 #
 # created: 02.01.2017
-# last modified: Sun Jan  8 17:14:06 2017
+# last modified: Sun 08 Jan 2017 05:27:53 PM MST
 # 
 # description:
 #
@@ -19,7 +19,7 @@
 
 # filepath to dotfiles repo (make
 # sure to use $HOME and not ~/)
-DOT_FILEPATH="/Users/gzuber/OneDrive/repos/dotfiles"
+DOT_FILEPATH="$HOME/OneDrive/repos/dotfiles"
 echo "if your dotfiles repo isn't '$DOT_FILEPATH', then change 'install.sh'"
 
 # utility vars
