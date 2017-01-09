@@ -69,12 +69,12 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # go config
 
 # for mac:
-# export GOROOT="/usr/local/opt/go/libexec"
-# export PATH="$PATH:$GOROOT/bin"
+export GOROOT="/usr/local/opt/go/libexec"
+export PATH="$PATH:$GOROOT/bin"
 
 # for cade:
-export GOROOT="$HOME/packages/go"
-export PATH="$PATH:$GOROOT/bin"
+# export GOROOT="$HOME/packages/go"
+# export PATH="$PATH:$GOROOT/bin"
 
 # mono config
 export MONO_GAC_PREFIX="usr/local"
