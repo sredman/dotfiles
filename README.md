@@ -117,3 +117,20 @@ C-space // open list of possible completions for what you’re typing
 :IH // goto file under cursor, S and V options exist for this as well
 ```
 
+### commenting
+```
+<Leader>co // create a new line above current line and create a comment with the cursor in the middle
+[count]<Leader>cc // comment the current/selected line
+[count]<Leader>cu // uncomment the current/selected line
+[count]<Leader>c<Space> // toggle commented-ness
+[count]<Leader>cs // comment with a sexily formatted block
+<Leader>c$ // comment from cursor to end of line
+<Leader>cA // adds comment to the end of the line and places cursor in the middle
+```
+
+### googling/searching
+```
+:Go query // will open an internet browser to a google search of "query"
+<K> // will open the man page for whatever's under the cursor
+```
+
