@@ -5,7 +5,7 @@
 # email: grahamzuber@gmail.com
 #
 # created: 02.01.2017
-# last modified: Sun Jan  8 20:58:58 2017
+# last modified: Wed Jan 11 15:28:46 2017
 #
 # description: 
 #
@@ -20,7 +20,7 @@ repos () { cd ~/OneDrive/repos/"$1" }
 
 
 # setting up repo without structure or source
-setrepo ()
+reposet ()
 {
     ~/.vim/plugged/YCM-Generator/config_gen.py $PWD
 
@@ -28,7 +28,7 @@ setrepo ()
 }
 
 # repo set up from scratch
-repo ()
+repoinit ()
 {
     git init
     mkdir src

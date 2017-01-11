@@ -16,8 +16,31 @@ directory variable in the shell script and run it.
     - clang_library_path should point to your libclang
     - change auto header comments to your info
 
+## Aliases and Functions
+
+### file path helpers
+```
+/* all of the following commands allow you to specify a directory
+ * argument to go to a subdirectory.
+ * i.e. "drive school" takes you to the school dir in onedrive
+ */
+icloud // go to icloud folder
+drive // go to onedrive folder
+docs // go to "documents" directory in onedrive folder
+repos // go to the repos folder in the home dir
+```
+
+### repo setup
+```
+/* helpers to make repos work with vim and vim plugins */
+reposet // will create ycm and ctags config files in current repo
+repoinit // does repo set but also creates src, inc, bin folders,
+         // main.c, main.h, and Makefile
+```
+
 ## Vim Shortcuts
 
+### window management
 ```
 // get rid of all splits except current one
 :only
