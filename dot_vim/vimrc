@@ -5,7 +5,7 @@
 " email: grahamzuber@gmail.com
 "
 " created: 02.01.2017
-" last modified: Sun Jan  8 19:14:32 2017
+" last modified: Mon Jan  9 19:26:42 2017
 " 
 " description:
 "
@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
 
 " basics
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/vim-easy-align'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
@@ -42,6 +43,9 @@ Plug 'vim-scripts/a.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Google stuff
+Plug 'szw/vim-g'
+
 " Color scheme
 Plug 'tyrannicaltoucan/vim-quantum'
 
@@ -51,8 +55,19 @@ Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' 
 call plug#end()
 
 " general settings
-set nocp      
+:let mapleader=","
 filetype plugin on      
+
+" nerdcommenter
+:imap <C-c> <Plug>NERDCommenterInsert
+:nmap <Leader>co O<C-c>
+
+" ycm configuration
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+
+" snipmate config
+:imap <S-Tab> <Esc>a<Plug>snipMateNextOrTrigger
+:smap <S-Tab> <Plug>snipMateNextOrTrigger
 
 " ctags and auto ctags
 set tags+=.tags
@@ -139,6 +154,10 @@ syntax on
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
+
+" vim-g google search stuff
+let g:vim_g_open_command = 'open'
+let g:vim_g_command = 'Go'
 
 " set line numbers
 set number
