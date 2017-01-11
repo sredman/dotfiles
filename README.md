@@ -46,11 +46,19 @@ repoinit // does repo set but also creates src, inc, bin folders,
 :only
 ```
 
-### fuzzy finding files
+### fuzzy finding
 ```
 C-p // start fuzzy finding
+M-p // start fuzzy finding functions
+
+/* while in finding mode */
+C-d // switch to searching filename instead of full path
 C-j // navigate down results list
 C-k // navigate up results list
+C-x // open file/function in split
+C-v // open file/function in vertical split
+C-z // mark files
+C-o // open marked files
 ```
 
 ### navigate buffer
