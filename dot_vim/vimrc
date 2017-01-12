@@ -5,7 +5,7 @@
 " email: grahamzuber@gmail.com
 "
 " created: 02.01.2017
-" last modified: Mon Jan  9 19:26:42 2017
+" last modified: Wed Jan 11 21:10:27 2017
 " 
 " description:
 "
@@ -63,6 +63,7 @@ filetype plugin on
 :nmap <Leader>co O<C-c>
 
 " ycm configuration
+let g:ycm_always_populate_location_list = 1
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 
 " snipmate config
