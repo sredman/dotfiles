@@ -5,7 +5,7 @@
 # email: grahamzuber@gmail.com
 #
 # created: 02.01.2017
-# last modified: Wed Jan 11 15:28:46 2017
+# last modified: Wed Jan 18 16:05:02 2017
 #
 # description: 
 #
@@ -41,7 +41,7 @@ repoinit ()
     echo "INC_TYPE = .h" >> Makefile
     echo "EXE = main\nDEXE = d_main" >> Makefile
     echo "CXX = gcc" >> Makefile
-    echo "CXXFLAGS = -std=c89 -O2 -Wall" >> Makefile
+    echo "CXXFLAGS = -std=c89 -Wall" >> Makefile
     echo "EXTRAFLAGS = " >> Makefile
     echo "SETUP_FILE = setup" >> Makefile
     echo "\n\n" >> Makefile
@@ -64,7 +64,7 @@ repoinit ()
 
     echo "\$(EXE): \$(OBJS)" >> Makefile
 	echo "\t@echo building executable "\$@"" >> Makefile
-    echo "\t\$(CXX) \$(CXXFLAGS) \$(EXTRAFLAGS) \$(INCLUDEFLAGS) \$(OBJS) -o \$(EXE)" >> Makefile
+    echo "\t\$(CXX) \$(CXXFLAGS) \$(EXTRAFLAGS) \$(INCLUDEFLAGS) -O2 \$(OBJS) -o \$(EXE)" >> Makefile
     echo "\n" >> Makefile
 
     echo "\$(DEXE): \$(DOBJS)" >> Makefile

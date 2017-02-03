@@ -5,7 +5,7 @@
 " email: grahamzuber@gmail.com
 "
 " created: 02.01.2017
-" last modified: Wed Jan 11 21:10:27 2017
+" last modified: Thu Jan 19 21:45:47 2017
 " 
 " description:
 "
@@ -52,11 +52,18 @@ Plug 'tyrannicaltoucan/vim-quantum'
 " Go Support
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+
 call plug#end()
 
 " general settings
 :let mapleader=","
 filetype plugin on      
+
+" folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 " nerdcommenter
 :imap <C-c> <Plug>NERDCommenterInsert
