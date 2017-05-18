@@ -58,7 +58,8 @@ class ExitCodes(Enum):
 # Mapping of source files (In this repo) to destination links
 DOT_FILES = {
                 'dot_gitignore_global' : '.gitignore_global',
-                       'dot_vim/vimrc' : '.vim/vimrc'
+                       'dot_vim/vimrc' : '.vim/vimrc',
+                       'dot_tmux.conf' : '.tmux.conf'
             }
 
 # Will be populated with directories to create as a result of the call to extract_new_directories
