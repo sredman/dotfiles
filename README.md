@@ -1,4 +1,13 @@
-# Graham Zuber's dotfiles
+# Simon's dotfiles
+
+*Even Newer*: install.py will detect what shell you're running and make the
+links. You don't even have to change anything!
+If you change $HOME (in the shell), the install destination will change
+The variable DOT_FILEPATH can be defined to change where the source dotfiles
+should be found. Alternately, it expects to find them in the current working
+directory.
+Finally, SHELL can be set to "all", which will install settings files for all
+supported shells.
 
 *NEW*: install.sh will create and link the necessary files to
 make these configs work, all you have to do is change the
