@@ -124,5 +124,5 @@ for dot_file in DOT_FILES.keys():
   if os.path.exists(dest):
     print("Refusing to trample " + dest)
   else:
-    print("Would create link src: " + src + " -> " + dest)
-    #os.symlink(src, dest)
+    print("Creating link " + src + " -> " + dest)
+    os.symlink(src, dest)
