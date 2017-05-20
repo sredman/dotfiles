@@ -175,7 +175,7 @@ export IGNOREEOF=3
 export PRINTER=Cups-PDF
 
 # Optional host-dependant settings
-if [ -e ${HOME}/.bashrc-${HOSTNAME}; then
+if [ -e ${HOME}/.bashrc-${HOSTNAME} ]; then
   source ${HOME}/.bashrc-${HOSTNAME}
 fi
 
