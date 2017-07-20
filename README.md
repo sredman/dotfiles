@@ -1,4 +1,4 @@
-# Simon's dotfiles
+# Graham and Simon's dotfiles
 
 *Even Newer*: install.py will detect what shell you're running and make the
 links. You don't even have to change anything!
