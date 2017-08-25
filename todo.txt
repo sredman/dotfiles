@@ -1,0 +1,3 @@
+Python installer does not handle missing directories (e.g., ~/.vim)
+
+Break .bashrc into separate sourceable files
