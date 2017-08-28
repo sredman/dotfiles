@@ -4,8 +4,10 @@
 " github: github.com/gzuber
 " email: grahamzuber@gmail.com
 "
-" created: 02.01.2017
-" last modified: Fri 25 Aug 2017 04:01:21 PM MDT
+" Hacked on by: Simon Redman <simon@ergotech.com>
+"
+" Created: 02.01.2017
+" Last Modified: Sun 27 Aug 2017 10:51:47 PM MDT
 " 
 " description:
 "
@@ -185,16 +187,14 @@ set expandtab
 autocmd bufnewfile *.c,*.cpp,*.h,*.cc
             \ exe "normal i" . 
             \ "/*" . "\n" .
-            \ "filename: " . expand("%") . "\n" .
+            \ "Filename: " . expand("%") . "\n" .
             \ "\n" .
-            \ "created by: Graham Zuber" . "\n" .
-            \ "github: github.com/gzuber" . "\n" .
-            \ "email: grahamzuber@gmail.com" . "\n" .
+            \ "Author: Simon Redman <simon@ergotech.com>" . "\n" .
             \ "\n" .
-            \ "created: " . strftime("%d.%m.%Y") . "\n" .
-            \ "last modified: " . strftime("%c") . "\n" .
+            \ "File Created: " . strftime("%d.%m.%Y") . "\n" .
+            \ "Last Modified: " . strftime("%c") . "\n" .
             \ "\n" .
-            \ "description: " . "\n\n" .
+            \ "Description: " . "\n\n" .
             \ "/" . "\n\n"
 
 " auto update last modified line
@@ -203,7 +203,7 @@ autocmd bufwritepre *
             \ exe "normal mj"
 autocmd bufwritepre *
             \ silent!
-            \ exe "1,15s/last modified:.*/last modified: " . strftime("%c") . "/g"
+            \ exe "1,15s/Last Modified:.*/Last Modified: " . strftime("%c") . "/g"
 autocmd bufwritepre *
             \ silent!
             \ exe "normal `j"
