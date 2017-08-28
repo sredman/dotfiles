@@ -5,55 +5,55 @@
 " email: grahamzuber@gmail.com
 "
 " created: 02.01.2017
-" last modified: Thu Jan 19 21:45:47 2017
+" last modified: Fri 25 Aug 2017 04:01:21 PM MDT
 " 
 " description:
 "
 " vim customizations
 
 
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
 " basics
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'junegunn/vim-easy-align'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'tpope/vim-fugitive'
+"Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdcommenter'
+"Plug 'junegunn/vim-easy-align'
+"Plug 'octol/vim-cpp-enhanced-highlight'
+"Plug 'tpope/vim-fugitive'
 
 " snippet support
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets'
+"Plug 'MarcWeber/vim-addon-mw-utils'
+"Plug 'tomtom/tlib_vim'
+"Plug 'garbas/vim-snipmate'
+"Plug 'honza/vim-snippets'
 
 " ctags
-Plug 'craigemery/vim-autotag'
+"Plug 'craigemery/vim-autotag'
 
 " autocomplete
-Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', {'branch': 'stable'}
-Plug 'Rip-Rip/clang_complete'
+"Plug 'Valloric/YouCompleteMe'
+"Plug 'rdnetto/YCM-Generator', {'branch': 'stable'}
+"Plug 'Rip-Rip/clang_complete'
 
 " navigating and searching
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-scripts/a.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'vim-scripts/a.vim'
 
 " smart tabline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 " Google stuff
-Plug 'szw/vim-g'
+"Plug 'szw/vim-g'
 
 " Color scheme
-Plug 'tyrannicaltoucan/vim-quantum'
+"Plug 'tyrannicaltoucan/vim-quantum'
 
 " Go Support
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+"Plug 'fatih/vim-go'
+"Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
-call plug#end()
+"call plug#end()
 
 " general settings
 :let mapleader=","
@@ -82,7 +82,7 @@ set tags+=.tags
 let g:autotagTagsFile=".tags"
 
 " colorscheme and font
-colorscheme quantum
+"colorscheme quantum
 let g:airline_theme='quantum'
 set guifont=Cousine\ for\ Powerline:h13
 
