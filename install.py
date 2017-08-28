@@ -14,6 +14,7 @@ import sys
 
 def add_bash_linkings():
   DOT_FILES['dot_bashrc'] = '.bashrc'
+  DOT_FILES['dot_bashrc_d'] = '.bashrc.d'
   
 def add_zsh_linkings():
   DOT_FILES['dot_zshrc'] = '.zshrc'
