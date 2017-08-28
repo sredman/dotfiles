@@ -7,7 +7,7 @@
 " Hacked on by: Simon Redman <simon@ergotech.com>
 "
 " Created: 02.01.2017
-" Last Modified: Sun 27 Aug 2017 10:51:47 PM MDT
+" Last Modified: Sun 27 Aug 2017 10:59:09 PM MDT
 " 
 " description:
 "
@@ -182,6 +182,9 @@ set shiftwidth=2
 
 " make sure pressing tab converts to space
 set expandtab
+
+" Add syntax highlighting for any file ending in *.bashrc
+au BufNewFile,BufRead *.bashrc setfiletype filetype=sh
 
 " auto insert header
 autocmd bufnewfile *.c,*.cpp,*.h,*.cc
