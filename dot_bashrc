@@ -130,11 +130,8 @@ PATH=~/bin:$PATH #Newer version, other overrides
 
 # Arcanist (phabricator.com) executable and tab completion
 PATH=$PATH:~/src/arcanist/bin/
-source ~/src/arcanist/resources/shell/bash-completion
+#source ~/src/arcanist/resources/shell/bash-completion
 
-# Only unlock the ssh key once. This particular solution doesn't seem to work
-# very well with attaching and detaching screens/tmux
-eval $(keychain --eval id_rsa)
 
 # Add a timestamp to bash's history command
 export HISTTIMEFORMAT="%d/%m/%y %T "
