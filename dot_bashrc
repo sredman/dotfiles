@@ -23,9 +23,6 @@ PATH=~/bin:$PATH #Newer version, other overrides
 PATH=$PATH:~/src/arcanist/bin/
 #source ~/src/arcanist/resources/shell/bash-completion
 
-# Only exit bash after seeing three EOF (Ctrl-D) in a row
-export IGNOREEOF=3
-
 # Hack for crummy programs to print to PDF
 export PRINTER=Cups-PDF
 
