@@ -8,11 +8,6 @@ case $- in
       *) return;;
 esac
 
-# Fedora wants to source the default .bashrc. This makes sense. Why doesn't Ubuntu do that?
-if [ -f /etc/bashrc ]; then
-	source /etc/bashrc
-fi
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
