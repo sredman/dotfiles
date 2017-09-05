@@ -1,0 +1,18 @@
+~/.bashrc.d/
+
+The files in this directory are to be sourced in alphabetical order by a bash
+startup script.
+
+Since alphabetical order is required, the following categories are suggested:
+
+00: System default files
+10: Priority system default files
+20: Variable definitions for any following scripts
+30: PATH and shell configuration
+40:
+50: Shell helper applications
+60:
+70:
+80:
+90: Global overrides
+  99: tmux or screen
