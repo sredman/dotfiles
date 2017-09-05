@@ -18,7 +18,7 @@ if [ -e ${ANDROID_SDK_PATH} ]; then
   PATH=${PATH}:${ANDROID_SDK_PATH}
 fi
 
-if [ -e ${ANDROID_NDK_PATH ]; then
+if [ -e ${ANDROID_NDK_PATH} ]; then
   PATH=${PATH}:${ANDROID_NDK_PATH}
 fi
 
