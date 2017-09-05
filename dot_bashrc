@@ -23,9 +23,6 @@ PATH=~/bin:$PATH #Newer version, other overrides
 PATH=$PATH:~/src/arcanist/bin/
 #source ~/src/arcanist/resources/shell/bash-completion
 
-# Hack for crummy programs to print to PDF
-export PRINTER=Cups-PDF
-
 # Optional host-dependant settings
 if [ -e ${HOME}/.bashrc-${HOSTNAME} ]; then
   source ${HOME}/.bashrc-${HOSTNAME}
