@@ -1,3 +1,10 @@
+# Put all workings on PS1 into this file
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
 # Make a sweet prompt
 PS1="\n"
 # Add the date in square brackets and the complete working path to PS1
