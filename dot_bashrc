@@ -8,10 +8,6 @@ case $- in
       *) return;;
 esac
 
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
-
 # Source all the directory files. This should be the only thing in this file.
 for f in $(ls ${HOME}/.bashrc.d/*.bashrc | sort -V)
 do
