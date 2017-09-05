@@ -16,13 +16,6 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
-PATH=$PATH:~/Downloads/android-sdk-linux/platform-tools #Android SDK
-PATH=~/bin:$PATH #Newer version, other overrides
-
-# Arcanist (phabricator.com) executable and tab completion
-PATH=$PATH:~/src/arcanist/bin/
-#source ~/src/arcanist/resources/shell/bash-completion
-
 # Source all the directory files. This should be the only thing in this file.
 for f in $(ls ${HOME}/.bashrc.d/*.bashrc | sort -V)
 do
