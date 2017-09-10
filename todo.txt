@@ -1,3 +1,2 @@
 Python installer does not handle missing directories (e.g., ~/.vim)
-
-Break .bashrc into separate sourceable files
+Auto-generated header comments for .sh and .py files does not properly update the Last Modified line
