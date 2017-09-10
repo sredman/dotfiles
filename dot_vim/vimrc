@@ -7,7 +7,7 @@
 " Hacked on by: Simon Redman <simon@ergotech.com>
 "
 " Created: 02.01.2017
-" Last Modified: Sun 27 Aug 2017 10:59:09 PM MDT
+" Last Modified: Sat 09 Sep 2017 06:31:01 PM MDT
 " 
 " description:
 "
@@ -186,19 +186,30 @@ set expandtab
 " Add syntax highlighting for any file ending in *.bashrc
 au BufNewFile,BufRead *.bashrc setfiletype filetype=sh
 
-" auto insert header
+" auto insert header with c-style comments
 autocmd bufnewfile *.c,*.cpp,*.h,*.cc
             \ exe "normal i" . 
             \ "/*" . "\n" .
             \ "Filename: " . expand("%") . "\n" .
             \ "\n" .
             \ "Author: Simon Redman <simon@ergotech.com>" . "\n" .
-            \ "\n" .
             \ "File Created: " . strftime("%d.%m.%Y") . "\n" .
             \ "Last Modified: " . strftime("%c") . "\n" .
-            \ "\n" .
             \ "Description: " . "\n\n" .
             \ "/" . "\n\n"
+
+" auto insert header with bash-style comments
+autocmd bufnewfile *.sh,*.py
+            \ exe "normal i" . 
+            \ "#" . "\n" .
+            \ "# Filename: " . expand("%") . "\n" .
+            \ "#\n" .
+            \ "# Author: Simon Redman <simon@ergotech.com>" . "\n" .
+            \ "# File Created: " . strftime("%d.%m.%Y") . "\n" .
+            \ "# Last Modified: " . strftime("%c") . "\n" .
+            \ "# Description: " . "\n" .
+            \ "#\n" .
+            \ "#" . "\n\n"
 
 " auto update last modified line
 autocmd bufwritepre *
