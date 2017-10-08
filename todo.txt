@@ -1,2 +1,3 @@
 Python installer does not handle missing directories (e.g., ~/.vim)
 Auto-generated header comments for .sh and .py files does not properly update the Last Modified line
+Add SSH config
