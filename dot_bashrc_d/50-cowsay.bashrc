@@ -4,6 +4,7 @@ if [ $? -eq 0 ]; then
   COW=$(echo $(cowsay -l)) 
   COW=${COW##C*:}
   numberOfCows=$(grep -o " " <<< "$COW" | wc -l)
+  numberOfCows=$(($numberOfCows - 1))
   random=$RANDOM
   let "random %= $numberOfCows"
   COW=$(echo $COW | cut -d ' ' -f $random)
