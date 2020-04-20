@@ -12,4 +12,4 @@
 #       path = gitalias.txt
 
 [alias]
-  temp-squash = "!f() { git merge \"$1\" --no-ff -m \"Temporary squashed merge of \"$1\"\"; }; f"
+  temp-squash = "!f() { git merge \"$1\" --squash && git commit -m \"Temporary squashed merge of \"$1\"\"; }; f"
