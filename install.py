@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 """
 Filename    : install.py
@@ -104,26 +104,26 @@ elif (SHELL.endswith("bash")):
 elif (SHELL.endswith("zsh")):
   add_zsh_linkings()
 else:
-  sys.stderr.write(SHELL +  " is not set or not supported. Skipping shell linkings")
+  print(SHELL +  " is not set or not supported. Skipping shell linkings")
 
 
 NEW_DIRECTORIES = extract_new_directories (DOT_FILES.values())
 
-print(NEW_DIRECTORIES)
-
 # Create any directories which need to be created
 for directory in NEW_DIRECTORIES:
-  if not os.path.exists(directory):
+  path = INSTALL_DIR + "/" + directory
+  if not os.path.lexists(path):
     # Stackoverflow points out that there is a race between checking and creating the directory
     # if the directory is created after checking but before creating. Don't do that.
-    os.makedirs(directory)
+    print("Creating " + directory)
+    os.makedirs(path)
 
 # Finally create the links
 for dot_file in DOT_FILES.keys():
   src = DOT_FILEPATH + "/" + dot_file
   dest = INSTALL_DIR + "/" + DOT_FILES[dot_file]
   
-  if os.path.exists(dest):
+  if os.path.lexists(dest):
     print("Refusing to trample " + dest)
   else:
     print("Creating link " + src + " -> " + dest)
