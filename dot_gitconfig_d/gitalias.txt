@@ -1,0 +1,15 @@
+# Typical usage for a typical user:
+#
+#   * Save this file as a dot file in your home directory: `~/.gitalias.txt`
+#
+#   * Edit your git config dot file in your home directory such as  `~/.gitconfig`
+#
+#   * Include the path to this file.
+#
+# Example file `~/.gitconfig` with an entry to include the file `~/.gitalias.txt`:
+#
+#     [include]
+#       path = gitalias.txt
+
+[alias]
+  temp-squash = "!f() { git merge \"$1\" --no-ff -m \"Temporary squashed merge of \"$1\"\"; }; f"
