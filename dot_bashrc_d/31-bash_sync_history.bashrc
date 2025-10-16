@@ -16,6 +16,9 @@ export HISTFILESIZE=-1
 export HISTSIZE=-1
 shopt -s histappend   # don't overwrite history file after each session
 
+is_child_process() {
+  [[ -n "$TERM_PROGRAM" ]] && return 0
+}
 
 # on every prompt, save new history to dedicated file and recreate full history
 # by reading all files, always keeping history from current session on top.
@@ -35,6 +38,12 @@ fi
 
 # merge session history into main history file on bash exit
 merge_session_history () {
+
+  if is_child_process; then
+    \rm ${HISTFILE}.$$
+    return 0 2>/dev/null || exit 0
+  fi
+
   if [ -e ${HISTFILE}.$$ ]; then
     cat ${HISTFILE}.$$ >> $HISTFILE
     \rm ${HISTFILE}.$$
